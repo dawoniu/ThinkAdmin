@@ -16,6 +16,7 @@ class Link extends AdminBase
 
     protected function _initialize()
     {
+
         parent::_initialize();
         $this->link_model = new LinkModel();
     }
@@ -117,7 +118,7 @@ class Link extends AdminBase
         if ($this->link_model->destroy($id)) {
             $this->success('删除成功');
         } else {
-            $this->error('删除失败');
+            $this->error('删除失败11');
         }
     }
 }
