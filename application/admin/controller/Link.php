@@ -87,7 +87,7 @@ class Link extends AdminBase
                 $this->error($validate_result);
             } else {
                 if ($this->link_model->allowField(true)->save($data, $id) !== false) {
-                    $this->success('更新成功');
+                    $this->success('更新成功！');
                 } else {
                     $this->error('更新失败');
                 }
