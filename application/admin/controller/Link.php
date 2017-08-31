@@ -55,7 +55,7 @@ class Link extends AdminBase
                 if ($this->link_model->allowField(true)->save($data)) {
                     $this->success('保存成功！');
                 } else {
-                    $this->error('保存失败');
+                    $this->error('保存失败！');
                 }
             }
         }
